@@ -20,9 +20,11 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('', views.about),
-    path('', views.services),
-    path('', views.login),
-    path('', views.signup),
-    path('', views.contactus),
+    path('about/', views.about),
+    path('login/', views.login),
+    path('signup/', views.signup),
+    path('contact/', views.contact),
+    path('services/', views.services)
+    
+    
 ]
